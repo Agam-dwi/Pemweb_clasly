@@ -19,7 +19,30 @@
       <span>+</span>
     </div>
   </div>
-
+<!-- Form input schedule (awalnya hidden) -->
+<div id="schedule-form" class="modal hidden">
+  <div class="modal-content">
+    <h2>Tambah Jadwal Kelas</h2>
+    <form id="classForm">
+      <label>Hari:
+        <input type="text" name="hari" required />
+      </label>
+      <label>Waktu (misal: 08:00 - 10:00):
+        <input type="text" name="waktu" required />
+      </label>
+      <label>Mata Kuliah:
+        <input type="text" name="matkul" required />
+      </label>
+      <label>Tempat (misal: Gd. B Lt. 3):
+        <input type="text" name="tempat" required />
+      </label>
+      <div class="form-actions">
+        <button type="submit">Simpan</button>
+        <button type="button" id="cancelBtn">Batal</button>
+      </div>
+    </form>
+  </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
