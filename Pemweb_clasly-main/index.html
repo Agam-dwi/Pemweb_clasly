@@ -7,37 +7,82 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Classly</h2>
-    <a href="#">Home</a>
-    <a href="schedule/class-schedule.html">Class Schedule</a>
-    <a href="notes/index.html">Notes</a>
-    <a href="folders/folder.html">Folders</a>
-    <a href="reminders/reminder.html">Reminders</a>
-  </div>
-
-  <!-- Main content -->
-  <div class="main-content">
-    <header>
-      <h1 id="welcome-text">Welcome back!</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Account</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="hero">
-      <h2>Your Campus Life, Organized.</h2>
-      <p>Plan classes, take notes, manage assignments — all in one app.</p>
-      <a href="#" class="cta-button">Get Started</a>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Classly</h2>
+      
+      <div class="sidebar-section">
+        <a href="#" class="active">Home</a>
+        <a href="schedule/class-schedule.html">Class Schedule</a>
+        <a href="notes/index.html">Notes</a>
+        <a href="folders/folder.html">Folders</a>
+        <a href="reminders/reminder.html">Reminders</a>
+      </div>
     </div>
 
-    <footer>
-      <p>© 2025 Classly</p>
-    </footer>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <header>
+        <div>
+          <h1 id="welcome-text">Good evening, Marsabella Fara Pramidya</h1>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Ask or find anything from your workspace...">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Content Area -->
+      <div class="content-area">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+          <div class="welcome-subtitle">Your Campus Life, Organized.</div>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+
+        <!-- Recent Items Section -->
+        <div class="recent-section">
+          <h3>
+            <span class="icon" style="background-color: #666;"></span>
+            Recently visited
+          </h3>
+          
+          <div class="recent-grid" id="recent-items">
+            <!-- Recent items will be populated here by JavaScript -->
+            <div class="empty-state">
+              <h4>No recent activity yet</h4>
+              <p>Start by creating your first class schedule, note, or reminder</p>
+              <a href="schedule/class-schedule.html">Create Class Schedule</a> • 
+              <a href="notes/index.html">Take Notes</a> • 
+              <a href="reminders/reminder.html">Set Reminder</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Events Section -->
+        <div class="recent-section">
+          <h3>
+            <span class="icon" style="background-color: #4f46e5;"></span>
+            Upcoming events
+          </h3>
+          
+          <div class="recent-grid" id="upcoming-events">
+            <!-- Upcoming events will be populated here -->
+            <div class="empty-state">
+              <h4>No upcoming events</h4>
+              <p>Your schedule and reminders will appear here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="main.js"></script>
