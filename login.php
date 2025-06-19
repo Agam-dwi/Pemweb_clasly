@@ -18,7 +18,8 @@
         if($result->num_rows > 0) {
             $data = $result->fetch_assoc();
             $_SESSION["username"] = $data["nama_pengguna"];
-            $_SESSION["is_login"] = true;
+            $_SESSION["is_login"] = $data["id_pengguna"]; // <--- ini kunci penting
+
             
             echo '<meta http-equiv="refresh" content="0;url=dashboard.php">';
 
